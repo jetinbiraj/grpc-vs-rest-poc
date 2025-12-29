@@ -1,0 +1,10 @@
+
+go 1.25.1
+
+use (
+	  .
+      ./services/service-a
+      ./services/service-b
+      ./services/service-c
+      ./services/service-d
+)
