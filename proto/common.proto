@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "grpc-vs-rest-poc/proto/commonpb";
+
+message Request {
+  string trace_id = 1;
+}
+
+message Response {
+  string trace_id = 1;
+  string service = 2;
+}
+
+service Processor {
+  rpc Process(Request) returns (Response);
+}
