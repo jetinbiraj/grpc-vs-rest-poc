@@ -1,0 +1,15 @@
+meta {
+  name: processServiceD
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8084/process
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
