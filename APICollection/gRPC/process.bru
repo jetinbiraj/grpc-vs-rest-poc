@@ -1,0 +1,18 @@
+meta {
+  name: process
+  type: grpc
+  seq: 3
+}
+
+grpc {
+  url: localhost:9084/process
+  body: grpc
+  auth: inherit
+}
+
+body:grpc {
+  name: message 1
+  content: '''
+    {}
+  '''
+}
